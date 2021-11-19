@@ -1,6 +1,6 @@
  #!/bin/bash
 
 
-yay -S --needed tlp 
+yay -S --needed --noconfirm tlp 
 sudo systemctl enable tlp.service
 

@@ -2,17 +2,21 @@
 
 #########################  development
 yay -S --needed --noconfirm  go python docker nodejs npm
+
 ### IDE ve yardımcı toollar
 yay -S --needed --noconfirm  meld vscodium-bin sublime-text-4 gedit
+#### visual-studio-code-bin
+
 #### development add-ons
 yay -S --needed --noconfirm  python-pip node-gyp perl-xml-parser
 
-#### visual-studio-code-bin
-
-###############   java (flutter için 8-10 kurulacak
-#yay -S --needed --noconfirm jre8-openjdk jdk8-openjdk  jre8-openjdk-headless
 #######################################################
-# yay -S --needed  python-docopt python-numpy python-pyaudio python-cfft python-websockets python-pygments  python-anytree glib2-docs gtk-doc xfce4-dev-tools jq boost gtest ninja meson semver oniguruma intltool vala graphviz openal
+# yay -S --needed --noconfirm python-docopt python-numpy python-pyaudio python-cfft 
+# yay -S --needed --noconfirm python-websockets python-pygments  
+# yay -S --needed --noconfirm python-anytree glib2-docs 
+# yay -S --needed --noconfirm gtk-doc xfce4-dev-tools 
+# yay -S --needed --noconfirm jq boost gtest ninja meson 
+# yay -S --needed --noconfirm semver oniguruma intltool vala graphviz openal
 
 sudo groupadd docker
 #newgrp docker

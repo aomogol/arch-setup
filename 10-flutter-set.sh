@@ -7,8 +7,8 @@ archlinux-java status
 sudo archlinux-java set java-8-openjdk
 
 yay -S --needed --noconfirm  android-studio
-yay -S --needed --noconfirm  flutter google-chrome
-yay -S --needed --noconfirm  vscodium-bin
+yay -S --needed --noconfirm  flutter 
+yay -S --needed --noconfirm  google-chrome vscodium-bin 
 # dart
 
 sudo groupadd flutterusers

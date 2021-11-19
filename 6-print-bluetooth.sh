@@ -5,10 +5,11 @@ yay -S --needed --noconfirm pulseaudio-bluetooth bluez bluez-libs bluez-utils bl
 
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
-sudo sed -i 's/'#AutoEnable=false'/'AutoEnable=true'/g' /etc/bluetooth/main.conf
-
+#sudo sed -i 's/'#AutoEnable=false'/'AutoEnable=true'/g' /etc/bluetooth/main.conf
 
 ############ printer
-yay -S --needed --noconfirm cups cups-pdf ghostscript gsfonts gutenprint gtk3-print-backends libcups system-config-printer hplip
-
-sudo systemctl enable org.cups.cupsd.service
+yay -S --needed --noconfirm cups cups-pdf libcups system-config-printer hplip
+# yay -S --needed --noconfirm ghostscript gsfonts gutenprint gtk3-print-backends  
+# sudo systemctl enable org.cups.cupsd.service
+sudo systemctl enable cups.service 
+sudo systemctl start cups.service 
