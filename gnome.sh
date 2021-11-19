@@ -1,28 +1,13 @@
 #!/bin/bash
 #set -e
 ###############################################################################
-# Author	:	Erik Dubois
-# Website	:	https://www.erikdubois.be
-# Website	:	https://www.arcolinux.info
-# Website	:	https://www.arcolinux.com
-# Website	:	https://www.arcolinuxd.com
-# Website	:	https://www.arcolinuxb.com
-# Website	:	https://www.arcolinuxiso.com
-# Website	:	https://www.arcolinuxforum.com
-###############################################################################
 #
+###############################################################################
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
-#
 ###############################################################################
-
-
 ###############################################################################
-#
-#   DECLARATION OF FUNCTIONS
-#
+##   DECLARATION OF FUNCTIONS
 ###############################################################################
-
-
 func_install() {
 	if pacman -Qi $1 &> /dev/null; then
 		tput setaf 2
@@ -48,9 +33,8 @@ echo "Installation of the core software"
 
 list=(
 lightdm
-arcolinux-lightdm-gtk-greeter
-arcolinux-lightdm-gtk-greeter-settings
-arcolinux-wallpapers-git
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 gnome
 gnome-tweaks
 guake

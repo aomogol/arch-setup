@@ -1,3 +1,5 @@
+ #!/bin/bash
+
 #########################  development
 yay -S --needed --noconfirm  go python docker nodejs npm
 ### IDE ve yardımcı toollar

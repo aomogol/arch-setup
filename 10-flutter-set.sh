@@ -1,3 +1,5 @@
+ #!/bin/bash
+
 ########### Flutter ve Android Studio
 yay -S --needed --noconfirm jre8-openjdk jdk8-openjdk  jre8-openjdk-headless
 # flutter 8 yada 10 versiyonu istiyor

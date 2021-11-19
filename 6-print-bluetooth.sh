@@ -1,3 +1,5 @@
+ #!/bin/bash
+
 ##### bluetooth
 yay -S --needed --noconfirm pulseaudio-bluetooth bluez bluez-libs bluez-utils blueberry
 

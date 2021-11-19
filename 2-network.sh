@@ -1,3 +1,4 @@
+ #!/bin/bash
 
 ############### samba ve network discovery
 yay -S --needed --noconfirm avahi samba gvfs-smb nss-mdns

@@ -1,3 +1,4 @@
+ #!/bin/bash
 
 #########################  Multimedia Apps
 yay -S --needed --noconfirm obs-studio hypnotix handbrake kdenlive

@@ -1,4 +1,5 @@
 
+ #!/bin/bash
 
 ######################### VM
 yay -S --needed --noconfirm virtualbox virtualbox-ext-vnc virtualbox-guest-iso virtualbox-guest-utils virtualbox-host-dkms virtualbox-sdk

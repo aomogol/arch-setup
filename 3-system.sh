@@ -1,6 +1,4 @@
-
-yay -S --needed --noconfirm paru-bin yay-bin
-# pamac-all
+ #!/bin/bash
 
 
 #########################  costimization & theme
@@ -30,3 +28,8 @@ yay -S --needed --noconfirm czkawka-gui-bin ncdu cutefish
 
 yay -S --needed --noconfirm  ocs-url
 # variety cryfs
+
+
+############# SSD Diskler için
+sudo systemctl enable fstrim.timer
+sudo systemctl start fstrim.timer

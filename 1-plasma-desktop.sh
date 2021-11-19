@@ -1,5 +1,4 @@
- 
-#!/bin/bash
+ #!/bin/bash
 #set -e
 ###############################################################################
 # Author	:	Ahmet Onder Mogol	
@@ -7,6 +6,19 @@
 # Çalıştırmadan önce okuyunuz. İnanmadığınız veya anlamadığınız birşey var ise
 # kurmayın yada sormaktan çekinmeyin sorun lütfen.
 ################################################################################
+###############################################################################
+# Kurulması istenen paketler
+###############################################################################
+list=(
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+plasma-meta
+dolphin
+konsole
+spectacle
+yakuake
+)
 ###############################################################################
 #   FONKSİYON TANIMLARI
 ###############################################################################
@@ -28,22 +40,9 @@ func_install() {
     	sudo pacman -S --noconfirm --needed $1
     fi
 }
-
 ###############################################################################
 echo "Temel yazılımlar kuruluyor"
 ###############################################################################
-
-list=(
-lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-plasma-meta
-dolphin
-konsole
-spectacle
-yakuake
-)
-
 count=0
 
 for name in "${list[@]}" ; do
@@ -53,14 +52,6 @@ for name in "${list[@]}" ; do
 done
 
 ###############################################################################
-
-#tput setaf 6;echo "################################################################"
-#echo "Copying all files and folders from /etc/skel to ~"
-#echo "################################################################"
-#echo;tput sgr0
-#cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
-#cp -arf /etc/skel/. ~
-
 tput setaf 5;echo "################################################################"
 echo " Lightdm displaymanager olarak ayarlanıyor"
 echo "################################################################"
