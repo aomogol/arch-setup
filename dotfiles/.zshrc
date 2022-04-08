@@ -140,7 +140,7 @@ export CHROME_EXECUTABLE=/opt/google/chrome/chrome
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -la'
-alias l='ls'
+alias l='ls -lah'
 alias l.="ls -A | egrep '^\.'"
 
 #Recent Installed Packages

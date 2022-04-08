@@ -14,3 +14,4 @@ yay -S --needed --noconfirm avahi samba gvfs-smb nss-mdns
 #sudo sed -i 's/\[\!UNAVAIL=return\] dns/\[\!UNAVAIL=return\] mdns dns wins myhostname/g' /etc/nsswitch.conf
 
 
+yay -S --needed --noconfirm remmina freerdp remmina-plugin-rdesktop spice-gtk libvncserver

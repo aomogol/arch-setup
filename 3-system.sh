@@ -14,9 +14,16 @@ yay -S --needed --noconfirm etcher-bin gnome-firmware gnome-disk-utility
 
 #########################  file explorer
 yay -S --needed --noconfirm dolphin dolphin-plugins thunar thunar-volman thunar-shares-plugin thunar-archive-plugin thunar-media-tags-plugin catfish ffmpegthumbs
+
+## fuzzy finder
+## konunun detayı https://wiki.archlinux.org/title/fzf
+## https://github.com/junegunn/fzf
+### https://github.com/jhawthorn/fzy
+yay -S --needed --noconfirm skim fzf paruz fzy
+
 # sıkıştırma ile ilgili toollar
 yay -S --needed --noconfirm unace unrar zip unzip sharutils uudeview arj cabextract file-roller ark
-### 
+### czkawka duplicate finder
 yay -S --needed --noconfirm czkawka-gui-bin ncdu cutefish
 
 ###### aksesuar

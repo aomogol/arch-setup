@@ -236,11 +236,11 @@ ex ()
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 # neofetch
 
-# export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
-# export PATH=$JAVA_HOME/bin:$PATH
-# export FLUTTER_HOME=/opt/flutter
-# export PATH=${PATH}:${FLUTTER_HOME}/bin
-# export CHROME_EXECUTABLE=/opt/google/chrome/chrome
+export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
+export PATH=$JAVA_HOME/bin:$PATH
+export FLUTTER_HOME=/opt/flutter
+export PATH=${PATH}:${FLUTTER_HOME}/bin
+export CHROME_EXECUTABLE=/opt/google/chrome/chrome
 # export ANDROID_SDK_ROOT='/opt/android-sdk'
 # export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
 # export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
