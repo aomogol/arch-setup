@@ -1,6 +1,6 @@
 # arch-setup
  ARCH Linux kurulum için scriptler
- 
+#################################################### 
  
  
 chaotic repo ekleme  
