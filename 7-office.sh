@@ -1,10 +1,10 @@
  #!/bin/bash
 ###########  Office
-yay -S --needed --noconfirm  libreoffice aspell-en libmythes mythes-en languagetool
+#yay -S --needed --noconfirm  libreoffice aspell-en libmythes mythes-en languagetool
 ## Document viewer
-yay -S --needed --noconfirm  evince
+yay -S --needed --noconfirm  evince okular
 
-# yay -S --needed --noconfirm onlyoffice
+yay -S --needed --noconfirm onlyoffice-bin
 #yay -S --needed --noconfirm
 
 ###########  fonts

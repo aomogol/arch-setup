@@ -26,3 +26,6 @@ yay -S --needed --noconfirm simplescreenrecorder
 
 #########################  codecler
 yay -S --needed --noconfirm a52dec faac faad2 flac jasper lame libdca libdv libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore
+
+## ip tv için
+yay -S --needed --noconfirm aribb24 qmplay2

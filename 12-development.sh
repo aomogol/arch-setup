@@ -1,11 +1,12 @@
  #!/bin/bash
 
 #########################  development
-yay -S --needed --noconfirm  go python docker nodejs npm
-
+yay -S --needed --noconfirm go python docker nodejs npm
+yay -S --needed --noconfirm clang cmake ninja pkgconf gtk3
 ### IDE ve yardımcı toollar
-yay -S --needed --noconfirm  meld vscodium-bin sublime-text-4 gedit
-#### visual-studio-code-bin
+yay -S --needed --noconfirm  meld sublime-text-4 gedit
+# yay -S --needed --noconfirm  visual-studio-code-bin
+### yay -S --needed --noconfirm vscodium-bin
 
 #### development add-ons
 yay -S --needed --noconfirm  python-pip node-gyp perl-xml-parser
@@ -27,3 +28,4 @@ sudo systemctl enable containerd.service
 sudo systemctl start containerd.service
 
 sudo chmod 666 /var/run/docker.sock
+docker run hello-world

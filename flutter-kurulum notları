@@ -39,13 +39,14 @@ flutter config --android-studio-dir /opt/android-studio
 flutter config --android-sdk /opt/android-sdk
 
 ##
-#yay -S --needed --noconfirm  android-sdk android-sdk-platform-tools android-sdk-build-tools android-platform android-sdk-cmdline-tools-latest
-#export ANDROID_SDK_ROOT='/opt/android-sdk'
-#export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
-#export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
-#export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-#export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
-#PATH=$ANDROID_HOME/emulator:$PATH
+yay -S --needed --noconfirm  android-sdk android-sdk-platform-tools android-sdk-build-tools android-platform android-sdk-cmdline-tools-latest
+
+export ANDROID_SDK_ROOT='/opt/android-sdk'
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
+PATH=$ANDROID_HOME/emulator:$PATH
 
 
 sudo groupadd android-sdk

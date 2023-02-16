@@ -4,7 +4,7 @@
 ### Browser
 yay -S --needed --noconfirm firefox chromium google-chrome brave-bin 
 ## Opera
-#yay -S --needed --noconfirm opera
+yay -S --needed --noconfirm opera
 ## Vivaldi
 #yay -S --needed --noconfirm vivaldi vivaldi-ffmpeg-codecs
 ## FTP
@@ -21,3 +21,6 @@ yay -S --needed --noconfirm thunderbird
 yay -S --needed --noconfirm spotify
 ## SSH client
 yay -S --needed --noconfirm putty
+
+
+yay -S --needed --noconfirm firefox chromium google-chrome brave-bin opera filezilla zoom discord telegram-desktop qbittorrent thunderbird spotify putty

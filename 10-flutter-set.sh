@@ -1,12 +1,22 @@
  #!/bin/bash
 
+
+
 ########### Flutter ve Android Studio
 yay -S --needed --noconfirm jre8-openjdk jdk8-openjdk  jre8-openjdk-headless
 # flutter 8 yada 10 versiyonu istiyor
 archlinux-java status
 sudo archlinux-java set java-8-openjdk
 
+# linux desktop
+yay -S --needed --noconfirm clang cmake ninja pkgconf gtk3
+# android studio
 yay -S --needed --noconfirm  android-studio
+## android studio çalıştırılacak
+#1 dive eklenecek
+#sdk manager dan command line tool kurulacak.
+android-studio
+
 yay -S --needed --noconfirm  flutter 
 yay -S --needed --noconfirm  google-chrome vscodium-bin 
 # dart
@@ -29,3 +39,10 @@ sudo gpasswd -a $USER android-sdk
 #sudo chown -R $USER $ANDROID_SDK_ROOT
 
 flutter doctor --android-licenses
+
+# ✗ Unable to find bundled Java version.
+#
+# bu hata alınırsa android studio nun kurulu olduğu yerdeki
+# jre yi kullanmak için
+#sudo ln -s ../jre jdk
+

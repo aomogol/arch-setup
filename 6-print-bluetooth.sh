@@ -1,7 +1,8 @@
  #!/bin/bash
 
 ##### bluetooth
-yay -S --needed --noconfirm pulseaudio-bluetooth bluez bluez-libs bluez-utils blueberry
+yay -S --needed --noconfirm bluez bluez-libs bluez-utils blueberry
+#pulseaudio-bluetooth
 
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
