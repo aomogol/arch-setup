@@ -1,18 +1,75 @@
+#
+# ~/.bashrc
+#
+
 ############################################## alias from AOM
+#list
+# alias ls='lsd'
+alias ls='ls --color=auto'
+alias la='ls -a'
+alias ll='ls -la'
+alias l='ls'
+alias l.="ls -A | egrep '^\.'"
+
+# mirrorlist
+alias mraom="sudo reflector --age 6 --latest 20  --fastest 20 --sort rate --protocol http,https --save /etc/pacman.d/mirrorlist"
+
+## yay alias
 alias yup="yay -Syyu --noconfirm"
 alias u="yay -Syyu --noconfirm"
+alias ins="yay -S --needed --noconfirm"
+alias pp='paru -Syyu --noconfirm'
+
+#readable output
+alias df='df -h'
 alias ds="du -hs *"
-alias mraom="sudo reflector --age 6 --latest 20  --fastest 20 --sort rate --protocol http,https --save /etc/pacman.d/mirrorlist"
 alias ip='ip --color=auto'
 alias ns='nslookup -type=any'
-alias ins="yay -S --needed --noconfirm"
+
+#Cleanup orphaned packages
+alias cls='sudo pacman -Rns $(pacman -Qtdq)'
+
 # get error messages from journalctl
 alias hata="journalctl -p 3 -xb"
+alias err='journalctl -p 3 -xb'
+
 ## hblock disable etmek için
 alias dhblock='hblock -S none -D none'
 
+#iso and version used to install ArcoLinux
+alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
+
+#quickly kill conkies
+alias kc='killall conky'
+
+#hardware info --short
+alias hw="hwinfo --short"
+
+#switch between bash and zsh
+alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
+alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+
+#free
+alias free="free -mt"
+
+#pacman unlock
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
+
+alias np='sudo nano /etc/pacman.conf'
+alias nm='sudo nano /etc/pacman.d/mirrorlist'
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
 ## alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias config='/usr/bin/git --git-dir=/home/aom/dotfiles/ --work-tree=/home/aom'
+
+#fix obvious typo's
+alias cd..='cd ..'
+alias udpate='sudo pacman -Syu'
 
 
 function path(){
@@ -23,3 +80,5 @@ function path(){
 }
 
 ############################################## alias from AOM
+
+alias n='neofetch'
