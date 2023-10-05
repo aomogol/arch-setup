@@ -20,8 +20,6 @@ sudo sed -i "s/$FIND2/$REPLACE2/g" /etc/pacman.conf
 # sudo localectl set-keymap trq
 # sudo localectl set-locale LANG=en_US.UTF-8
 echo "################################################################"
-## Kullanıcı için grup atamaları
-sudo usermod -aG wheel,users,power,lp,adm,audio,video,optical,storage,network,rfkill $USER
 
 sudo pacman -Syyu --needed --noconfirm 
 sudo pacman -S --needed --noconfirm base-devel git wget curl
@@ -349,3 +347,5 @@ sudo pacman -Rns $(pacman -Qtdq)
 sudo pacman-optimize 
 ####################################################################################
 
+## Kullanıcı için grup atamaları
+sudo usermod -aG wheel,users,power,lp,adm,audio,video,optical,storage,network,rfkill $USER
