@@ -300,21 +300,21 @@ echo "##########################################################################
 
 echo "###########################################################################"
 # virtual box
-sudo pacman -S --noconfirm --needed virtualbox
-sudo pacman -S --noconfirm --needed linux-hardened-headers
-sudo pacman -S --needed virtualbox-host-dkms virtualbox-guest-iso virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox-ext-vnc 
+# sudo pacman -S --noconfirm --needed virtualbox
+# sudo pacman -S --noconfirm --needed linux-hardened-headers
+# sudo pacman -S --needed virtualbox-host-dkms virtualbox-guest-iso virtualbox-host-modules-arch virtualbox-ext-oracle virtualbox-ext-vnc 
 
-VBoxManage setextradata global GUI/SuppressMessages "all"
+# VBoxManage setextradata global GUI/SuppressMessages "all"
 # resolution issues Jan/2023
 # VBoxManage setextradata "Your Virtual Machine Name" "VBoxInternal2/EfiGraphicsResolution" "2560x1440"
 # VBoxManage setextradata "Your Virtual Machine Name" "VBoxInternal2/EfiGraphicsResolution" "1920x1080"
 # graphical driver - VMSVGA !
 # see : https://wiki.archlinux.org/title/VirtualBox#Set_guest_starting_resolution
 
-sudo gpasswd -a $USER vboxusers
-sudo gpasswd -a $USER vboxsf
-sudo modprobe vboxdrv vboxguest vboxvideo vboxsf
-sudo vboxreload
+# sudo gpasswd -a $USER vboxusers
+# sudo gpasswd -a $USER vboxsf
+# sudo modprobe vboxdrv vboxguest vboxvideo vboxsf
+# sudo vboxreload
 
 echo "###########################################################################"
 	
@@ -331,7 +331,7 @@ echo "##########################################################################
 # https://wiki.archlinux.org/index.php/Android_Debug_Bridge
 # https://github.com/Genymobile/scrcpy
 
-sudo pacman -S android-tools --noconfirm --needed
+sudo pacman -S --noconfirm --needed android-tools 
 #next one does not seem necessary
 #sudo pacman -S android-udev --noconfirm --needed
 yay -S --needed --noconfirm scrcpy
